@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/942cab3b07.js" crossorigin="anonymous"></script>
+        <style>
+            .section {
+                max-width: 800px; /* Set your desired max width */
+                margin: 0 auto; /* Center the video horizontally */
+            }
+            video {
+                width: 90%;
+                height: 50%; /* Make the video fill its container */
+            }
+        </style>
+    </head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="WhatsApp Image 2023-11-25 at 12.14.52 PM.jpeg" class="logo" >
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Certifications</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact </a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>FrontEnd Developer</p>
+                <h1>Hi,I'm <span>Chandini</span><br> from GVPCEW</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------about------------------>
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links "onclick="opentab('internships')">Internships</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br> <h3>C,C++,Java</h3></li>
+                        <li><span>Web Development</span><br><h3>HTML,CSS,Javascript</h3></li>
+                        <li><span>Operating System</span><br><h3>Windows</h3></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="internships">
+                    <ul>
+                        <li><span><b>Full Stack Developer</b></span><br><h2>V info Technologies</h2>May 2023-June 2023</li>
+                        <li><span><b>Java Developer</b></span><br><h2>Shaish info Solutions</h2>Aug 2022-Oct 2022</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br><b>B.Tech</b> -Gayatri Vidya Parishad College of Engineering for Women</li>
+                        <li><span>2020</span><br><b>Intermediate</b> -Sri GURU Junior College</li>
+                        <li><span>2018</span><br><b>SSC</b> -Sri Gowri Vidhyanikethan School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+<!------------Services----------->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="services-list">
+            <div>
+                <img src="wipro.jpeg" >
+            </div>
+            
+            <div>
+                <img src="coursera.jpeg" >
+            </div>
+            <div>
+                <img src="nptel.jpeg">    
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+<!---Hackathons-------------------------->
+<div id="hack">
+ <div class="container">
+        <h1 class="sub-title">Hackathons</h1>
+        <div class="hackathons">
+            <div>
+                <img src="code4tech.jpeg">
+            </div>
+            <div>
+                <img src="Hack2skill-Certificate.png">
+                
+            </div>
+            <div>
+                <img src="aspire_info.jpg" >
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------portfolio----------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class ="work-list">
+            <div class="work">
+                <img src="face.jpg">
+                <div class="layer">
+                    <h2>Attendance Managment Systtem Using FACE Recognition</h2>
+                  <p>A software application that automates attendance-taking using facial recognition technology.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="bank.jpg">
+                <div class="layer">
+                    <h2>Basic Banking System</h2>
+                    <p>
+                        Using this application we can transfer virtual money between multiple users and also record the banking transactions/Activites.
+                    </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="encrypt.jpg">
+                <div class="layer">
+                    <h2>Image Encryption & Decryption</h2>
+                    <p>
+                        Process to transform the image securely so that no unauthorized user can be able to decrypt the image. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                       <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>-->
+                     <!--  <input type="button" value="demo" onclick="clicc()">
+                       <script>
+                        function clicc(){
+                         document.body.innerHTML = "<div class='section'><video controls><source src='vide.mp4' type='video/mp4'></video></div>"
+                        }
+                        </script>
+                        <button onclick="goBack()">Go Back</button> 
+                        <script>
+                        function goBack() 
+  { 
+  window.history.back() 
+  } 
+
+                        </script>
+                    -->
+                        </div>
+                        </div>
+                      
+                    
+                   
+
+    
+<!--
+<input type="button" value="demo" onclick="clicc()">
+
+<script>
+    function clicc() {
+        var videoContainer = document.createElement('div');
+        videoContainer.className = 'video-container';
+
+        var video = document.createElement('video');
+        video.setAttribute('controls', true);
+          document.body.innerHTML = "<div class='section'><video controls><source src='vide.mp4' type='video/mp4'></video></div>"
+                        
+    }
+
+    function minimizeVideo() {
+        // Your logic to minimize the video
+        alert('Minimize functionality');
+    }
+
+    function maximizeVideo() {
+        // Your logic to maximize the video
+        alert('Maximize functionality');
+    }
+
+    function closeVideo() {
+        // Your logic to close the video
+        var videoContainer = document.querySelector('.video-container');
+        if (videoContainer) {
+            videoContainer.remove(); // Remove the video container
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+                       
+                </div>
+            </div>
+        </div>-->
+        <!--<a href="#" class="btn">see more</a>
+        <video width="500px" height="500px" controls="controls">
+                        <source src="vide.mp4" type="video/mp4" />
+                       </video>
+        -->
+        
+    </div>
+</div>
+<!--------contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>rongalichandini32@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9392749397</p>
+            <div class="social-icons">
+                <a href="https://github.com/20-589/"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/chandini-rongali-0414b2227/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="Rongali_Chandini_Resume.pdf"  download class="btn btn2">Download cv</a>
+        </div>
+            <div class="contact-right">
+                <!--<form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="Email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"required>
+
+                    </textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            -->
+            <form action="https://formsubmit.co/chashini2131@gmail.com" method="POST"/>
+            <input type="text" name="Name" placeholder="Your name" required>
+            <input type="Email" name="Email" placeholder="Your email" required>
+            <input type="text" name="Subject" required placeholder="Subject">
+            <textarea name="Message" rows="6" required placeholder="Your Message"></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit" class="btn btn2">Submit</button>
+         </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+
+    </div>
+    
+</div>
+
+
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+
+
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxTDKzGP8ltaCk2Oj9ztKYpQVXQi0FksBqHGCf2yw7I1u_p6v2VpSBBesktVreADq3N/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => { 
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
